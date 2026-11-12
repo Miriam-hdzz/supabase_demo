@@ -1,0 +1,16 @@
+2026-11-12 19:27:27 [ERROR] mvc.models.model_contactos: Eror 100: supabase_url is required
+2026-11-12 19:27:27 [ERROR] mvc.models.model_contactos: ERROR 101: 'ModelContactos' object has no attribute 'supabase'
+2026-11-12 19:28:48 [ERROR] mvc.models.model_contactos: Eror 100: supabase_url is required
+2026-11-12 19:28:48 [ERROR] mvc.models.model_contactos: ERROR 101: 'ModelContactos' object has no attribute 'supabase'
+2026-11-12 19:34:07 [ERROR] mvc.models.model_contactos: Eror 100: supabase_url is required
+2026-11-12 19:34:07 [ERROR] mvc.models.model_contactos: ERROR 101: 'ModelContactos' object has no attribute 'supabase'
+2026-11-12 19:34:10 [ERROR] mvc.models.model_contactos: Eror 100: supabase_url is required
+2026-11-12 19:34:10 [ERROR] mvc.models.model_contactos: ERROR 101: 'ModelContactos' object has no attribute 'supabase'
+2026-11-12 19:34:11 [ERROR] mvc.models.model_contactos: Eror 100: supabase_url is required
+2026-11-12 19:34:11 [ERROR] mvc.models.model_contactos: ERROR 101: 'ModelContactos' object has no attribute 'supabase'
+2026-11-12 19:34:12 [ERROR] mvc.models.model_contactos: Eror 100: supabase_url is required
+2026-11-12 19:34:12 [ERROR] mvc.models.model_contactos: ERROR 101: 'ModelContactos' object has no attribute 'supabase'
+2026-11-12 19:34:12 [ERROR] mvc.models.model_contactos: Eror 100: supabase_url is required
+2026-11-12 19:34:12 [ERROR] mvc.models.model_contactos: ERROR 101: 'ModelContactos' object has no attribute 'supabase'
+2026-11-12 19:34:55 [ERROR] mvc.models.model_contactos: Eror 100: supabase_url is required
+2026-11-12 19:34:55 [ERROR] mvc.models.model_contactos: ERROR 101: 'ModelContactos' object has no attribute 'supabase'
