@@ -18,7 +18,7 @@ class ModelContactos:
                 os.environ.get("SUPABASE_URL" , ""),
                 os.environ.get("SUPABASE_KEY" , "")
             )
-            self.SECRET_KEY = b"hola"
+            self.SECRET_KEY = b"miriss"
         except Exception as error:
             logger.error(f"Eror 100: {str(error)}")
             print(f"ERROR 100: {str(error)}")
