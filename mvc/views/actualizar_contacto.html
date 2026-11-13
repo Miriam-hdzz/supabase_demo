@@ -1,0 +1,21 @@
+$def with(contacto)
+
+$if contacto != []:
+    <form name="actualizar_contacto" method="POST">
+        <input type="hidden" name="id_contacto" value="$contacto[0]['id_contacto']">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" value="$contacto[0]['nombre']" required><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="$contacto[0]['email']" required><br>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="telefono" id="telefono" value="$contacto[0]['telefono']" required><br>
+
+        <button type="submit">Guardar Cambios</button>
+        <button type="button" onclick="location.href='/contactos';">Cancelar</button>
+    </form>
+$else:
+    <h2>No se encontró el contacto.</h2>
+    <a href="/contactos">Regresar</a>
