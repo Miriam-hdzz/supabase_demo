@@ -82,7 +82,7 @@ class ModelContactos:
             print(f"ERROR 102: {str(error)}")
             return []
 
-    def insertarContacto(self,nombre:str,email:str,telefono:str):
+    def insertarContacto(self,nombre:str,email:str,telefono:str,foto:str):
         try:
             # INSERT INTO contactos(nombre,email,telefono) VALUES(?,?,?);
             data = {

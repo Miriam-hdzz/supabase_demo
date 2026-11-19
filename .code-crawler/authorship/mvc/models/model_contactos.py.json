@@ -2,16 +2,16 @@
   "filePath": "mvc\\models\\model_contactos.py",
   "lines": [
     {
-      "line": 2,
+      "line": 84,
       "author": "human",
-      "confidence": 0.34533333333333327,
+      "confidence": 0.4899999999999999,
       "aiEdits": 0,
-      "humanEdits": 16,
+      "humanEdits": 19,
       "lastEditType": "human",
-      "lastEditTimestamp": 1794325808971,
+      "lastEditTimestamp": 1795018582245,
       "signals": {
-        "typingRhythm": 0.3,
-        "editSize": 0.15000000000000002,
+        "typingRhythm": 0.125,
+        "editSize": 0.07999999999999996,
         "cursorMovement": 0.3,
         "editSequence": 0.8300000000000001,
         "undoFrequency": 0.5,
@@ -32,5 +32,5 @@
     "aiPercentage": 0,
     "humanPercentage": 100
   },
-  "lastUpdated": 1794373032423
+  "lastUpdated": 1795035104869
 }

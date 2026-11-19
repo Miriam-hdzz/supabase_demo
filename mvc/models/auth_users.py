@@ -36,7 +36,20 @@ class AuthUsers:
 
     def registrarUsuario(self, email, pasword:str)->str | None:
         try:
-            response = 
+            response = self.supabase.auth.sign_up(
+            {
+                "email": email, 
+                "password": password
+            }
+        )
+            print(f"Usuario registrado correctamente")
+            print(response)
+            return response.user.id # type: ignore
+
+        except Exception as error:
+            logger.error(f"Error 102: {str(error)}")
+            print(f"Error 102: {str(error)}")
+            return None
 
 
 if __name__ == "__main__":
