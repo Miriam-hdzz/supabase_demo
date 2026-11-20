@@ -3,7 +3,7 @@ from supabase import create_client, Client
 from dotenv import load_dotenv
 import logging
 
-#lee las variables de entorno del archivo .env
+# Lee las variables de entorno
 load_dotenv()
 
 # Configura el sistema de logging
@@ -21,41 +21,42 @@ class AuthUsers:
             logger.error(f"ERROR 100: {str(error)}")
             print(f"ERROR 100: {str(error)}")
 
-    def iniciarSesion(self, email:str, pasword:str):
+    def iniciarSesion(self, email:str, password:str)->str|None:
         try:
             response = self.supabase.auth.sign_in_with_password(
                 {
-                "email": email,
-                "password": pasword
-            }
+                    "email":email,
+                    "password":password
+                }
             )
-            print(f"Inicio de sesión exitoso: {response}")
+            #print(f"Inicio de sesión exitoso:{response.session.access_token}")
+            return response.session.access_token # type: ignore
         except Exception as error:
             logger.error(f"ERROR 101: {str(error)}")
             print(f"ERROR 101: {str(error)}")
+            return None
 
-    def registrarUsuario(self, email, pasword:str)->str | None:
+    def registrarUsuario(self, email:str, password:str)->str | None:
         try:
             response = self.supabase.auth.sign_up(
-            {
-                "email": email, 
-                "password": password
-            }
-        )
-            print(f"Usuario registrado correctamente")
+                {
+                    "email":email,
+                    "password":password
+                }
+            )
+            print(f"Usuario registrado exitosamente")
             print(response)
             return response.user.id # type: ignore
 
         except Exception as error:
-            logger.error(f"Error 102: {str(error)}")
-            print(f"Error 102: {str(error)}")
+            logger.error(f"ERROR 102: {str(error)}")
+            print(f"ERROR 102: {str(error)}")
             return None
 
-
 if __name__ == "__main__":
-    print("Autenticacion de usuarios")
+    print("Autenticación de usuarios")
     objeto = AuthUsers()
-    print(objeto.iniciarSesion("miris@gmail.com","123456"))
-    print(objeto.iniciarSesion("miris@gmail.com", "123456"))
-                         
-        
+    #print(objeto.iniciarSesion("miriss@email.com","12345678")) # Contraseña no valida
+    #print(objeto.iniciarSesion("miriss@email.com","123456789")) # Contraseñan valida
+
+    print(objeto.registrarUsuario("johnq@email.com","123456789"))

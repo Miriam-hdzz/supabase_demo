@@ -1,0 +1,4 @@
+2026-11-19 13:17:14 [INFO] httpx: HTTP Request: GET https://fmrdgfzyneexxogxrimt.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
+2026-11-19 13:17:16 [INFO] httpx: HTTP Request: GET https://fmrdgfzyneexxogxrimt.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
+2026-11-19 13:19:02 [INFO] httpx: HTTP Request: GET https://fmrdgfzyneexxogxrimt.supabase.co/rest/v1/contactos?select=%2A&id_contacto=eq.2 "HTTP/2 200 OK"
+2026-11-19 13:21:59 [INFO] httpx: HTTP Request: GET https://fmrdgfzyneexxogxrimt.supabase.co/rest/v1/contactos?select=%2A "HTTP/2 200 OK"
